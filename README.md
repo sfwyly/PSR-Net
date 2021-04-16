@@ -29,7 +29,7 @@ All configuration option in config.py.
 ```
   generator = build_model(mode = "training")
 ```
-> fine tuning (Optional)
+> fine tuning (Option)
 ```
   generator = build_model(mode = "tuning")
 ```
