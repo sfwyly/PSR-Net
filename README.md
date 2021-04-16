@@ -36,7 +36,7 @@ All configuration option in config.py.
 
 ## Mask Dataset
 We provide two ways to support loading the Mask dataset.
-1. Existing Mask Dataset
+1. Existing Mask Dataset  
 set *train_mask_path* and *val_mask_path* in config.py.
 2. Generating Random Mask (we used the strategy of "gated conv" paper)  
 set *generated_mask=False* in config.py
