@@ -1,4 +1,4 @@
-# PSR-Net (WWW 2021 workshop)
+# PSR-Net (WWW 2021 )
 Progressive Semantic Reasoning for Image Inpainting
 
 (The code will be released before 2021/4/25)
