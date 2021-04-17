@@ -1,8 +1,6 @@
 # PSR-Net (WWW 2021 )
 Progressive Semantic Reasoning for Image Inpainting
 
-(The code will be released before 2021/4/25)
-
 ## Requirements
 * tensorflow 2.0 （required）
 * numpy 1.19.5 (optional)
