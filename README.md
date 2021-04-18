@@ -4,7 +4,7 @@ Progressive Semantic Reasoning for Image Inpainting
 ## Requirements
 * tensorflow 2.0 （required）
 * numpy 1.19.5 (optional)
-* [loader](https://github.com/sfwyly/loader) 0.1 (required)
+* [loader](https://github.com/sfwyly/loader) 1.0 (required)
 * opencv 4.1.1.26 (optional)
 * Pillow 6.0.0 (optional)
 * pathlib 1.0.1 (optional)
