@@ -95,14 +95,14 @@ class PartialConv(layers.Layer):
             return self.leaky_relu(self.bn(output, training=self.training)), update_mask
         return output, update_mask
 
-class PFRNet(models.Model):
+class PSRNet(models.Model):
     """
         Our Progressive Semantic Reasoning Module
         Three Share Parameters modules
 
     """
     def __init__(self,training = True):
-        super(PFRNet, self).__init__()
+        super(PSRNet, self).__init__()
 
         self.training = training
         self.Pconv01 = PartialConv(in_channels=3, out_channels=64, kernel=7, strides=2, flag=False,training=training)
@@ -241,8 +241,8 @@ def build_model(mode = "training"):
     masks = layers.Input(batch_shape=(batch_size, image_size, image_size, 1))
 
     if(mode=="tuning"):
-        outputs = PFRNet(training=False)(inputs, masks)
+        outputs = PSRNet(training=False)(inputs, masks)
     else:
-        outputs = PFRNet(training=True)(inputs, masks)
+        outputs = PSRNet(training=True)(inputs, masks)
 
     return models.Model(inputs,outputs)
