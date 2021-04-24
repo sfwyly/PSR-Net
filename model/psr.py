@@ -245,4 +245,4 @@ def build_model(mode = "training"):
     else:
         outputs = PSRNet(training=True)(inputs, masks)
 
-    return models.Model(inputs,outputs)
+    return models.Model([inputs,masks],outputs)
